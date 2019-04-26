@@ -2,19 +2,23 @@
 
 E ai Candidato!
 
-Este desafio consiste em identificar seu nível de habilidade com desenvolvimento para em React Native, portanto esperamos que você tente resolve-lo usando toda a sua capacidade e conhecimento da tecnologia. 
+Este desafio consiste em identificar seu nível de habilidade com desenvolvimento em React Native, portanto, esperamos que você tente resolve-lo usando toda a sua capacidade e conhecimento da tecnologia. 
 
 O desafio é o seguinte:
 
-Monte um aplicativo em React Native que consuma uma API REST e mostre uma lista de dados, ao clicar em um dos itens desta lista, uma segunda tela é mostrada contendo mais informações sobre aquele item.
+Monte um aplicativo em React Native que:
 
-Tente colocar ao máximo todos os recursos técnicos que você conhece, quando se trata de padrão de arquitetura, boas práticas de código, novas bibliotecas, etc. 
+- consuma uma API REST;
+- mostre uma tela contendo lista de dados no formato de cards (imagem e descrição);
+- ao clicar em um dos itens desta lista, uma segunda tela deve ser mostrada contendo mais informações sobre aquele item.
 
-O desafio também contempla criar uma interface bem legal, objetiva e agradável. Colocamos também um link para um repositório no Zeplin contendo uma sugestão de interface.
+Tente colocar ao máximo todos os recursos técnicos que você conhece, quando se trata de padrão de arquitetura, boas práticas de codificação, novas bibliotecas, etc.
 
-Você deve fazer um Fork deste repositório e solicitar um Pull Request, com seu nome completo na descrição, para nossa avaliação.
+O desafio também contempla criar uma interface bem legal, objetiva e agradável. Para isso, colocamos abaixo um link para um repositório no Zeplin contendo uma sugestão de interface.
 
-Recomendamos algumas API’s abertas e gratuitas para estes teste, porém isto é apenas uma recomendação, se sinta livre para fazer outra escolha e nos surpreender ;)
+Recomendamos também algumas API’s abertas e gratuitas para este desafio, porém isto é apenas uma recomendação, se sinta livre para fazer outra escolha e nos surpreender ;)
+
+**Para submeter o resultado deste desafio, você deve fazer um Fork deste repositório e solicitar um Pull Request, com seu nome completo na descrição, para nossa avaliação.**
 
 # API’s 
 ## The Open Movie Database
@@ -23,10 +27,9 @@ Recomendamos algumas API’s abertas e gratuitas para estes teste, porém isto �
 ## Unsplash
 [Unsplash Image API | Free HD Photo API](https://unsplash.com/developers)
 
-# Design - Zeplin
+# Design - [Zeplin](https://app.zeplin.io/login)
 E-mail - buildbox.mobileguest@gmail.com
 Senha - JhZ5dAPG
 
-[Zeplin](https://app.zeplin.io/login)
 
 ![footer](https://s3-us-west-2.amazonaws.com/hippoprod/blog/react-native/react_native_equation.png)
