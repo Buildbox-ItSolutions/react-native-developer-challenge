@@ -9,17 +9,20 @@
 import React, {Component} from 'react';
 import { StyleSheet, View} from 'react-native';
 import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
 
-import store from './app/store';
+import { store, persistor } from './app/store';
 import Home from './app/screens/Home';
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <View style={styles.container}>
-          <Home />
-        </View>
+        <PersistGate loading={null} persistor={persistor}>
+          <View style={styles.container}>
+            <Home />
+          </View>
+        </PersistGate>
       </Provider>
     );
   }
