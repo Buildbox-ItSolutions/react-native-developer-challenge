@@ -1,7 +1,7 @@
 import * as types from './types';
 
 const INITIAL_STATE = {
-    allUsers: '',
+    allUsers: [],
 }
 
 export default (state = INITIAL_STATE, action) => {

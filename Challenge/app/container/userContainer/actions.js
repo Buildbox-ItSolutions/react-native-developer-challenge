@@ -3,13 +3,13 @@ import * as types from './types';
 
 export const allUsers = () => {
 
-    let users = '';
+    let users = [];
 
     return(dispatch) => {
         const userStore = new UserRequest;
         userStore.getUserList()
             .then((response) => {
-                users = response[0]
+                users = response
                 dispatch({type: types.ALL_USERS, payload: users})
             })
     }
