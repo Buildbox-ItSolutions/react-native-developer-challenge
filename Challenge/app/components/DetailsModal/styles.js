@@ -48,7 +48,8 @@ export default {
         fontWeight: 'bold',
         fontSize: 14,
         alignSelf: 'center',
-        paddingBottom: 10,
+        paddingBottom: 5,
+        paddingTop: 5,
     },
     defaultText:{
         color: '#0A7E6D',
@@ -69,5 +70,21 @@ export default {
         flexDirection: 'column',
         alignItems: 'center'
 
+    },
+    avatarView: {
+        flex: 3,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    nameView: {
+        flex: 1, 
+        justifyContent: 'center', 
+        alignItems: 'center',
+    },
+    iconView: {
+        flex:0.5,
+        alignSelf: 'flex-end',
+        paddingRight: 10,
+        paddingTop: 10,
     }
 }

@@ -60,7 +60,6 @@ class Home extends PureComponent {
     }
     
     render() {
-        console.log(this.state.page)
         return (
             <View style={styles.container}>
                 <FlatList 
