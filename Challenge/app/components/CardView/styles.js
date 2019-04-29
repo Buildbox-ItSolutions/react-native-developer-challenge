@@ -32,7 +32,7 @@ export default {
         alignItems: 'center',
         justifyContent: 'center',
     },
-    locationView: {
+    urlView: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
@@ -42,7 +42,7 @@ export default {
         color: '#FFF',
         fontWeight: 'bold'
     },
-    locationName: {
+    urlText: {
         fontWeight: 'bold',
         color: '#0A7E6D'
     }

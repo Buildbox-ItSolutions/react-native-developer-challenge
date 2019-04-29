@@ -4,12 +4,16 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "update": "adb shell input keyevent 46 46"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "react": "16.8.3",
     "react-native": "0.59.5",
+    "react-native-elements": "^1.1.0",
+    "react-native-modal": "^10.0.0",
+    "react-native-vector-icons": "^6.4.2",
     "react-redux": "^7.0.2",
     "redux": "^4.0.1",
     "redux-persist": "^5.10.0",

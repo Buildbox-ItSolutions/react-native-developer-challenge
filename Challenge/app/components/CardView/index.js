@@ -17,8 +17,8 @@ export default class CardView extends Component {
                 <View style={styles.nameView}>
                     <Text style={styles.nameText}>{this.props.login}</Text>
                 </View>
-                <View style={styles.locationView}>
-                    <Text style={styles.locationName}>Campinas, São Paulo</Text>
+                <View style={styles.urlView}>
+                    <Text style={styles.urlText}>{this.props.url}</Text>
                 </View>
             </View>
         </View>
