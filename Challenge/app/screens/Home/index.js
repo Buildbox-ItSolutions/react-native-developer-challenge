@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { View, FlatList, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
+import Orientation from 'react-native-orientation';
 
 import { allUsers, userDetails } from '../../container/userContainer/actions';
 import CardView  from '../../components/CardView';
@@ -27,6 +28,7 @@ class Home extends PureComponent {
 
     componentDidMount(){
        this.props.allUsers(this.state.itemsPerPage);
+       Orientation.lockToPortrait();
     }
 
     buildModal = (login) => {
