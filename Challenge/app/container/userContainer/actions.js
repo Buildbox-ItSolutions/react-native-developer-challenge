@@ -2,13 +2,13 @@ import UserRequest from '../../requests/Users';
 import UserDetailsRequest from '../../requests/UserDetails';
 import * as types from './types';
 
-export const allUsers = () => {
+export const allUsers = (itemsPerPage) => {
 
     let users = [];
 
     return(dispatch) => {
         const userStore = new UserRequest;
-        userStore.getUserList()
+        userStore.getUserList(itemsPerPage)
             .then((response) => {
                 users = response
                 dispatch({type: types.ALL_USERS, payload: users})

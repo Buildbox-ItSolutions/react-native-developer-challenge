@@ -44,6 +44,7 @@ export default {
     },
     urlText: {
         fontWeight: 'bold',
-        color: '#0A7E6D'
+        color: '#0A7E6D',
+        alignSelf: 'center',
     }
 }

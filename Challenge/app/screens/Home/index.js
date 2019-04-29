@@ -13,18 +13,20 @@ class Home extends PureComponent {
 
         this.state = {
             isModalVisible: false,
+            itemsPerPage: 20,
         };
 
         this.toggleModal = this.toggleModal.bind(this)
         this.buildModal = this.buildModal.bind(this)
         this._renderItem = this._renderItem.bind(this)
+
     }
 
     toggleModal = () =>
         this.setState({ isModalVisible: !this.state.isModalVisible });
 
     componentDidMount(){
-       this.props.allUsers();
+       this.props.allUsers(this.state.itemsPerPage);
     }
 
     buildModal = (login) => {
@@ -49,8 +51,16 @@ class Home extends PureComponent {
         )
     }
 
+    loadMore = () => {
+        this.setState({
+            itemsPerPage: this.state.itemsPerPage + 20,
+        }, () => {
+            this.props.allUsers(this.state.itemsPerPage);
+        })
+    }
+    
     render() {
-        //const { details } = this.props.details;
+        console.log(this.state.page)
         return (
             <View style={styles.container}>
                 <FlatList 
@@ -60,6 +70,8 @@ class Home extends PureComponent {
                     renderItem={({item}) =>
                     this._renderItem(item.avatar_url, item.login, item.html_url)
                     }
+                    onEndReached={() => this.loadMore()}
+                    onEndReachedThreshold={0.5}
                 />
                 <DetailsModal 
                     toggleModal={this.toggleModal}
