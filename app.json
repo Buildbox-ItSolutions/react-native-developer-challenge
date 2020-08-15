@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "CovidRadar",
+    "slug": "CovidRadar",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#473F97"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.Nikolassanots.CovidRadar",
+      "versionCode": 1
+    },
+    "description": ""
+  }
+}
